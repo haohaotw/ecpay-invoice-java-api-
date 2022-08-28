@@ -53,12 +53,18 @@ public class IssuingAllowanceByCollegiateRequest extends BaseDataRequest {
     @JsonProperty(value = "AllowanceAmount")
     public int allowanceAmount;
 
+    /**
+     * 商品
+     */
     @JsonProperty(value = "Items")
     public List<ItemDataModel> items;
 
     @JsonProperty(value = "Reason")
     public String reason;
 
+    /**
+     * 消費者同意後回傳網址
+     */
     @JsonProperty(value = "ReturnURL")
     public String returnUrl;
 }
