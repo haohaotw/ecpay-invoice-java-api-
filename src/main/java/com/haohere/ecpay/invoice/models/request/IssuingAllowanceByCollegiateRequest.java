@@ -47,6 +47,9 @@ public class IssuingAllowanceByCollegiateRequest extends BaseDataRequest {
     @JsonProperty(value = "NotifyPhone")
     public String notifyPhone;
 
+    /**
+     * 折讓單總金額(含稅)
+     */
     @JsonProperty(value = "AllowanceAmount")
     public int allowanceAmount;
 
