@@ -1,19 +1,10 @@
 package com.haohere.ecpay.invoice;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.haohere.ecpay.invoice.impl.ECPayInvoiceClientImpl;
-import com.haohere.ecpay.invoice.models.request.IssuingInvoiceRequest;
-import com.haohere.ecpay.invoice.models.request.ItemDataModel;
-import com.haohere.ecpay.invoice.models.request.QueryInvoiceInfoRequest;
 import com.haohere.ecpay.invoice.util.AES;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 
 
 /**
