@@ -11,6 +11,9 @@ import java.util.List;
  */
 public class IssuingAllowanceByCollegiateRequest extends BaseDataRequest {
 
+    /**
+     * 發票編號
+     */
     @JsonProperty(value = "InvoiceNo")
     public String invoiceNo;
 
@@ -31,6 +34,9 @@ public class IssuingAllowanceByCollegiateRequest extends BaseDataRequest {
     @JsonProperty(value = "AllowanceNotify")
     public String allowanceNotify;
 
+    /**
+     * 顧客姓名
+     */
     @JsonProperty(value = "CustomerName")
     public String customerName;
 
@@ -62,6 +68,9 @@ public class IssuingAllowanceByCollegiateRequest extends BaseDataRequest {
     @JsonProperty(value = "Items")
     public List<ItemDataModel> items;
 
+    /**
+     * 原因
+     */
     @JsonProperty(value = "Reason")
     public String reason;
 
