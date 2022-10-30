@@ -13,6 +13,9 @@ import java.util.List;
  */
 public class IssuingAllowanceRequest extends BaseDataRequest {
 
+    /**
+     * 發票號碼
+     */
     @JsonProperty(value = "InvoiceNo")
     public String invoiceNo;
 
