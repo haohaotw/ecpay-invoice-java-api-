@@ -19,6 +19,9 @@ public class IssuingAllowanceRequest extends BaseDataRequest {
     @JsonProperty(value = "InvoiceNo")
     public String invoiceNo;
 
+    /**
+     * 發票日期
+     */
     @JsonProperty(value = "InvoiceDate")
     public String invoiceDate;
 

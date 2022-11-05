@@ -360,8 +360,6 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
 
         var serializeBaseRequestObject = objectMapper.writeValueAsString(baseRequest);
 
-        RequestBody body = RequestBody.create(serializeBaseRequestObject, MediaType.get("application/json; charset=utf-8"));
-
-        return body;
+        return RequestBody.create(serializeBaseRequestObject, MediaType.get("application/json; charset=utf-8"));
     }
 }
