@@ -25,6 +25,14 @@ public class IssuingAllowanceRequest extends BaseDataRequest {
     @JsonProperty(value = "InvoiceDate")
     public String invoiceDate;
 
+    /**
+     * 通知類別
+     * 開立折讓後，寄送將相關發票折讓資訊通知消費者
+     * S：簡訊
+     * E：電子郵件
+     * A：皆通知時
+     * N：皆不通知
+     */
     @JsonProperty(value = "AllowanceNotify")
     public String allowanceNotify;
 
