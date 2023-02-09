@@ -60,9 +60,15 @@ public class IssuingAllowanceRequest extends BaseDataRequest {
     @JsonProperty(value = "AllowanceAmount")
     public int allowanceAmount;
 
+    /**
+     * 細項
+     */
     @JsonProperty(value = "Items")
     public List<ItemDataModel> items;
 
+    /**
+     * 原因
+     */
     @JsonProperty(value = "Reason")
     public String reason;
 
