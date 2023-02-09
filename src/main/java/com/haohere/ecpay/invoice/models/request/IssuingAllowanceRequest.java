@@ -54,6 +54,9 @@ public class IssuingAllowanceRequest extends BaseDataRequest {
     @JsonProperty(value = "NotifyPhone")
     public String notifyPhone;
 
+    /**
+     * 折讓金額
+     */
     @JsonProperty(value = "AllowanceAmount")
     public int allowanceAmount;
 
