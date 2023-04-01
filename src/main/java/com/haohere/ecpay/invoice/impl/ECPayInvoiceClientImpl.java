@@ -76,6 +76,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
 
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
+
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
                     issuingInvoiceResponseDto = objectMapper.readValue(actual, IssuingInvoiceResponse.class);
@@ -118,6 +120,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
 
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
+
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
                     queryInvoiceInfoResponse = objectMapper.readValue(actual, QueryInvoiceInfoResponse.class);
@@ -158,6 +162,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
                 if (responseResult.transCode == 1) {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
+
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
 
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
@@ -200,6 +206,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
 
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
+
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
                     issuingAllowanceResponse = objectMapper.readValue(actual, IssuingAllowanceResponse.class);
@@ -240,6 +248,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
                 if (responseResult.transCode == 1) {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
+
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
 
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
@@ -283,6 +293,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
 
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
+
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
                     invalidAllowanceResponse = objectMapper.readValue(actual, InvalidAllowanceResponse.class);
@@ -323,6 +335,8 @@ public class ECPayInvoiceClientImpl implements ECPayInvoiceClient {
                 if (responseResult.transCode == 1) {
 
                     var result = AES.decrypt(responseResult.data.toString(), hashKey, hashIV);
+
+                    if (result == null) throw new ECPayInvoiceException("AES decrypt failed");
 
                     var actual = URLDecoder.decode(result, StandardCharsets.UTF_8);
 
