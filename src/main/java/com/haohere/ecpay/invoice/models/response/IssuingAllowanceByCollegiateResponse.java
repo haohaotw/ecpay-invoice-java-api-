@@ -9,9 +9,19 @@ import com.haohere.ecpay.invoice.models.base.BaseDataResponse;
  */
 public class IssuingAllowanceByCollegiateResponse extends BaseDataResponse {
 
+    /**
+     * 折讓單號
+     * 開立成功，會回傳折讓單號；
+     * 開立失敗，則會回傳空值。
+     */
     @JsonProperty(value = "IA_Allow_No")
     public String iaAllowNo;
 
+    /**
+     * 發票號碼
+     * 開立成功，會回傳當初開立的發票號碼；
+     * 開立失敗，則會回傳空值。
+     */
     @JsonProperty(value = "IA_Invoice_No")
     public String iaInvoiceNo;
 
