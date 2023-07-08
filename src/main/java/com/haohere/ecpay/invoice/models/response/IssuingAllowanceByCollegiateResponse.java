@@ -25,6 +25,12 @@ public class IssuingAllowanceByCollegiateResponse extends BaseDataResponse {
     @JsonProperty(value = "IA_Invoice_No")
     public String iaInvoiceNo;
 
+    /**
+     * 線上折讓時間
+     * 建立成功，會回傳線上折讓時間
+     * 回傳格式為「yyyy-MM-dd HH:mm:ss」；
+     * 建立失敗，則會回傳空值
+     */
     @JsonProperty(value = "IA_TempDate")
     public String iaTempDate;
 
