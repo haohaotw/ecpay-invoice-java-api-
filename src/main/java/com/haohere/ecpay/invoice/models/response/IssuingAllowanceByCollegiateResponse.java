@@ -34,6 +34,11 @@ public class IssuingAllowanceByCollegiateResponse extends BaseDataResponse {
     @JsonProperty(value = "IA_TempDate")
     public String iaTempDate;
 
+
+    /**
+     * 折讓時間
+     * 格式為「yyyy-MM-dd HH:mm:ss」
+     */
     @JsonProperty(value = "IA_Date")
     public String iaDate;
 
